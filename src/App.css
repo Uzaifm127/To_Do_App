@@ -1,38 +1,66 @@
-.App {
+#appContainer {
+  width: 290px;
+  background: rgb(255, 249, 213);
+  border-radius: 15px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.502), 0 0 10px rgba(0, 0, 0, 0.494),
+    0 0 15px rgba(0, 0, 0, 0.32);
+}
+
+#currentDate {
+  padding: 22px 22px;
   text-align: center;
+  color: rgb(139, 13, 139);
+  border-bottom: 1px solid black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#titleContainer {
+  text-align: center;
+  padding: 20px 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#taskContainer {
+  padding: 0px 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.tasks {
+  /* text-decoration: line-through; */
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  background: rgba(255, 0, 0, 0.555);
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.338), 0 0 10px rgba(0, 0, 0, 0.338);
+}
+
+.taskWriter {
+  padding: 10px 20px;
+  outline: none;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  display: block;
+  margin: 15px auto;
+  transition: all 0.3s ease;
+}
+
+.taskWriter:focus {
+  padding: 10px 60px 10px 20px;
+  text-align: start;
+}
+
+#btnContainer {
+  display: flex;
+  padding-bottom: 20px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+#addBtn {
+  border: none;
+  outline: none;
+  padding: 7px 15px;
+  border-radius: 5px;
+  background: rgb(74, 74, 255);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
